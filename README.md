@@ -52,15 +52,15 @@ A UART bridge between a PC terminal (Tera Term) and a Pmod BLE (RN4871) module v
 │  ┌──────────────────────────────────────────────────────┐  │
 │  │               ZYNQ PS (ARM Cortex-A9)                │  │
 │  │                                                      │  │
-│  │  UART1 (MIO 48/49) ◄─────────────────────────────►  │  │
+│  │  UART1 (MIO 48/49) ◄─────────────────────────────►   │  │
 │  │  [Terminal / Tera Term]             USB-UART J14     │  │
 │  │                                                      │  │
-│  │  UART0 (MIO 10/11) ◄─────────────────────────────►  │  │
-│  │  [Pmod BLE]                         JE Pin 2/3      │  │
+│  │  UART0 (MIO 10/11) ◄─────────────────────────────►   │  │
+│  │  [Pmod BLE]                         JE Pin 2/3       │  │
 │  │                                                      │  │
 │  │        main.c: polling bridge loop                   │  │
-│  │        UART1 RX → UART0 TX                          │  │
-│  │        UART0 RX → UART1 TX                          │  │
+│  │        UART1 RX → UART0 TX                           │  │
+│  │        UART0 RX → UART1 TX                           │  │
 │  └──────────────────────────────────────────────────────┘  │
 │                                                            │
 └──────────────────────────┬─────────────────────────────────┘
