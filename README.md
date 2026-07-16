@@ -4,6 +4,8 @@ A UART bridge between a PC terminal (Tera Term) and a Pmod BLE (RN4871) module v
 
 ---
 
+![Pmod BLE Attached To ZedBoard](images/PmodBLE_connected_ZedBoard.jpg)
+
 ## Table of Contents
 
 | File | Description | Status |
@@ -90,9 +92,8 @@ TeraTerm_ZedBoard_PmodBLE/
 ├── README.md
 ├── vivado/                          ← Vivado project files
 ├── ws/                              ← Vitis workspace
-│   └── ZedBLEapplication/
-│       └── src/
-│           └── main.c
+│   └── src/
+│         └── main.c
 └── docs/
     ├── 01_vivado_block_design.md
     ├── 02_vitis_uart_bridge.md
