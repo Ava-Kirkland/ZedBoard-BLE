@@ -141,7 +141,17 @@ The application runs from RAM. Every power cycle requires re-running from Vitis.
 If Tera Term is set to any other baud rate, the UART bridge will produce garbage output or nothing. Set this before launching the Vitis application.
 
 ---
+## Related Projects
 
+This project builds on a series of standalone ZedBoard projects. Work through them in order if starting from scratch — each one validates a component in isolation before it is combined here.
+
+| Project | Description | Link |
+|---|---|---|
+| ZedBoard OLED | Onboard OLED with custom AXI-Lite IP | [ZedBoard-OLED-Tutorial-Notes](https://github.com/Ava-Kirkland/ZedBoard-OLED-Tutorial-Notes) |
+| ZedBoard Pmod TMP2 | ADT7420 temperature sensor over I2C | [ZedBoard-Pmod-TMP2](https://github.com/Ava-Kirkland/Zedboard-Pmod-TMP2) |
+| ZedBoard Pmod BLE | **RN4871 UART bridge** | [ZedBoard-BLE](https://github.com/Ava-Kirkland/ZedBoard-BLE) |
+| ZedBoard OLED + TMP2 | Combined OLED display with live temperature | [ZedBoard-OLED-TMP2](https://github.com/Ava-Kirkland/ZedBoard-OLED-TMP2) |
+| **ZedBoard APP BLE OLED TMP2** | Added Flutter app over BLE | [ZedBoard-APP-OLED-TMP2](https://github.com/Ava-Kirkland/ZedBoard-APP-BLE-OLED-TMP2) |
 ## External Resources
 
 - [ZedBoard Hardware User Guide](https://files.digilent.com/resources/programmable-logic/zedboard/ZedBoard_HW_UG_v2_2.pdf)
